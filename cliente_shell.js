@@ -1,5 +1,5 @@
 var net = require('net');
-var lib = require("readline");
+var lib = require('readline');
 var ip = require('ip');
 
 var client = new net.Socket();
@@ -16,10 +16,10 @@ var id;
 var nombre = null;
 var usuarios = "";
 var seleccionado;
-var cambios=false;
+var cambios = false;
 var vistos={};
 
-console.log('\x1Bc')
+console.log('\x1Bc');
   rl.question('Como te llamas?: ', (answer) => {
   nombre = answer;
   client.connect(3000,'192.168.0.32');
@@ -93,8 +93,8 @@ function  limpiarMostrar(){
                indicadorMensajes(obj.destinatario);
               }
             }else{
-              chats[obj.id_emisor] +== obj.username + " : " + obj.mensaje + "\n";
-              if(obj.id_emisor!=idsChats[seleccionado]){
+              chats[obj.id_emisor] += obj.username + " : " + obj.mensaje + "\n";
+              if(obj.id_emisor !== idsChats[seleccionado]){
                  vistos[obj.id_emisor].contador++;
                indicadorMensajes(obj.id_emisor);
               }
