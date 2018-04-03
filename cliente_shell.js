@@ -17,7 +17,7 @@ var nombre = null;
 var usuarios = "";
 var seleccionado;
 var cambios=false;
-var visto={};
+var vistos={};
 
 console.log('\x1Bc')
   rl.question('Como te llamas?: ', (answer) => {
@@ -122,7 +122,7 @@ function  limpiarMostrar(){
             chats = chatsTemp;
             idsChats = idsChatsTemp;
             usuarios = usuariosTemp+"\n";
-            var vistos = vistosTemp;
+            vistos = vistosTemp;
             if(idsChats[seleccionado] === null){
               seleccionado=0;
             }
