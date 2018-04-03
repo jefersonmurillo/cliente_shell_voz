@@ -1,0 +1,15 @@
+{
+  "name": "cliente_shell",
+  "version": "0.0.1",
+  "description": "",
+  "main": "cliente_shell.js",
+  "scripts": {
+    "start": "node cliente_shell.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "ip": "^1.1.5"
+  }
+}
